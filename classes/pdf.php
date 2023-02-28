@@ -36,7 +36,7 @@
              * WordPress installation, you will get passed an string of the HTML code which you can modify before the PDF gets rendered.
              */
             if(function_exists('magazineModifyHtml')){
-                $sHtmlToRender = magazineModifyHtml($sHtmlToRender);
+                $sHtmlToRender = magazineModifyHtml($sHtmlToRender, $aPostIds);
             }
 
             /**
