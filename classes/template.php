@@ -384,6 +384,11 @@
                         }
                     }
                 /* ADD ACF Support END */
+
+                 /* Add functionality to modify each post individually with placeholders*/
+                if(function_exists('magazineModifyPostHtml')) {
+                    $sContentTemp = magazineModifyPostHtml($sContentTemp, $post_id);
+                }
     
                 $sContentFinal .= $sContentTemp;
             }
