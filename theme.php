@@ -361,13 +361,13 @@
                     </p>
                 </form>
             </div>
-            <script src="' . plugin_dir_url( __DIR__ ). '/magazine/javascript/jquery.js"></script>
-            <script src="' . plugin_dir_url( __DIR__ ). '/magazine/javascript/ace/ace.js"></script>
-            <script src="' . plugin_dir_url( __DIR__ ). '/magazine/javascript/ace/emmet.js"></script>
-            <script src="' . plugin_dir_url( __DIR__ ). '/magazine/javascript/ace/ace-ext-emmet.js"></script>
-            <script src="' . plugin_dir_url( __DIR__ ). '/magazine/javascript/theme.js"></script>
+            <script src="' . plugin_dir_url( __DIR__ ). '/wp2pdf/javascript/jquery.js"></script>
+            <script src="' . plugin_dir_url( __DIR__ ). '/wp2pdf/javascript/ace/ace.js"></script>
+            <script src="' . plugin_dir_url( __DIR__ ). '/wp2pdf/javascript/ace/emmet.js"></script>
+            <script src="' . plugin_dir_url( __DIR__ ). '/wp2pdf/javascript/ace/ace-ext-emmet.js"></script>
+            <script src="' . plugin_dir_url( __DIR__ ). '/wp2pdf/javascript/theme.js"></script>
             <style>
-                @import "' . plugin_dir_url( __DIR__ ) . '/magazine/css/theme.css";
+                @import "' . plugin_dir_url( __DIR__ ) . '/wp2pdf/css/theme.css";
             </style>';
         });
     });
