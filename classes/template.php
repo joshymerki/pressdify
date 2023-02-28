@@ -166,7 +166,7 @@
             }
 
             foreach ($aPostIds as $post_id) {
-                $sToCHtml .= '<li><a href="#' . get_post_field('post_name', $post_id) . '">' . get_the_title($post_id) . '</a></li>';
+                $sToCHtml .= '<li><a href="#' . $post_id . '">' . get_the_title($post_id) . '</a></li>';
             }
             $sToCHtml = '<ul>' . $sToCHtml . '</ul>';
 
