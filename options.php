@@ -62,7 +62,7 @@
 
             echo '<div class="wrap wrap-magazine">
                     <h1>
-                        WP2PDF Options
+                        Pressdify Options
                     </h1>
                     <form name="magazine_options_form" method="post">
                         <table class="form-table">

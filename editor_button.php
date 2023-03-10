@@ -33,7 +33,7 @@ add_action('admin_print_footer_scripts', function(){
 			$sLink = '$(".edit-post-header__settings").prepend("<select id=\'magazine_template_selection\'>' . $sTemplateOptions . '</select><a style=\'margin-right:10px;background: lightseagreen !important;border-color: lightseagreen !important;\' href=\'#\' onclick=\'magazine_post_request([' . $post->ID . '], document.getElementById(\"magazine_template_selection\").value);\' class=\'prev-post components-button is-button is-primary is-large\'>Render PDF</a>");';
 		}
 		echo '
-			<script src="' . plugin_dir_url( __DIR__ ). '/magazine/javascript/restrequest.js"></script>
+			<script src="' . plugin_dir_url( __DIR__ ). '/pressdify/javascript/restrequest.js"></script>
 			<script>
 				if(window.jQuery) {
 					jQuery(document).ready(function($) {

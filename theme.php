@@ -45,7 +45,7 @@
     }
 
     add_action('admin_menu', function(){
-        add_theme_page('Magazine', 'Magazine', 9, 'magazine_theme_page', function(){
+        add_theme_page('Pressdify', 'Pressdify', 9, 'magazine_theme_page', function(){
             $aThemes        = magazine_template::_getTemplateNames();
             
             if(is_array($aThemes) && count($aThemes) == 0){ // Create Demo Template if there is none
@@ -87,7 +87,7 @@
 
             echo '<div class="wrap wrap-magazine">
                 <h1>
-                    Magazine Theme Editor
+                    Pressdify Theme Editor
                 </h1>
                 <form name="magazine_theme_selection_form" method="post">
                     <table class="form-table">
@@ -361,13 +361,13 @@
                     </p>
                 </form>
             </div>
-            <script src="' . plugin_dir_url( __DIR__ ). '/wp2pdf/javascript/jquery.js"></script>
-            <script src="' . plugin_dir_url( __DIR__ ). '/wp2pdf/javascript/ace/ace.js"></script>
-            <script src="' . plugin_dir_url( __DIR__ ). '/wp2pdf/javascript/ace/emmet.js"></script>
-            <script src="' . plugin_dir_url( __DIR__ ). '/wp2pdf/javascript/ace/ace-ext-emmet.js"></script>
-            <script src="' . plugin_dir_url( __DIR__ ). '/wp2pdf/javascript/theme.js"></script>
+            <script src="' . plugin_dir_url( __DIR__ ). '/pressdify/javascript/jquery.js"></script>
+            <script src="' . plugin_dir_url( __DIR__ ). '/pressdify/javascript/ace/ace.js"></script>
+            <script src="' . plugin_dir_url( __DIR__ ). '/pressdify/javascript/ace/emmet.js"></script>
+            <script src="' . plugin_dir_url( __DIR__ ). '/pressdify/javascript/ace/ace-ext-emmet.js"></script>
+            <script src="' . plugin_dir_url( __DIR__ ). '/pressdify/javascript/theme.js"></script>
             <style>
-                @import "' . plugin_dir_url( __DIR__ ) . '/wp2pdf/css/theme.css";
+                @import "' . plugin_dir_url( __DIR__ ) . '/pressdify/css/theme.css";
             </style>';
         });
     });

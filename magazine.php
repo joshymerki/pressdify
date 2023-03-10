@@ -1,11 +1,13 @@
 <?php
 /**
- * Plugin Name:       Wordpress2PDF
- * Description:       Create PDFs from your Posts and Pages using the printcss.cloud for PDF generation.
+ * Plugin Name:       Pressdify
+ * Description:       Wordpress to pdf in no time with PrintCSS
+* Plugin URI:					https://morntag.com
  * Version:           0.1.3
  * Requires at least: 5.7
  * Requires PHP:      7.2
- * Author:            Andreas Zettl / Joshua Merki / Brian Boy
+ * Author:            morntag.com
+ * Author URI:				https://morntag.com
  */
 
 require_once __DIR__ . '/classes/template.php';

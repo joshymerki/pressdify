@@ -52,7 +52,7 @@
 		if (!empty($_REQUEST['magazine_pdf_theme']) && !empty($_REQUEST['magazine_pdf_post_ids'])) {
 			
 			echo '
-				<script src="' . plugin_dir_url( __DIR__ ). '/magazine/javascript/restrequest.js"></script>
+				<script src="' . plugin_dir_url( __DIR__ ). '/pressdify/javascript/restrequest.js"></script>
 				<script>
 					if(window.jQuery) {
 						jQuery(document).ready(function($) {
