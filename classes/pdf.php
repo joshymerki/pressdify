@@ -40,19 +40,19 @@
             }
 
             /**
-             * The function magazineModifyCss can be defined in the functions.php of your 
+             * The function pressdifyModifyCss can be defined in the functions.php of your 
              * WordPress installation, you will get passed an string of the CSS code which you can modify before the PDF gets rendered.
              */
-            if(function_exists('magazineModifyCss')){
-                $sCssToRender = magazineModifyCss($sCssToRender);
+            if(function_exists('pressdifyModifyCss')){
+                $sCssToRender = pressdifyModifyCss($sCssToRender);
             }
 
             /**
-             * The function magazineModifyJavascript can be defined in the functions.php of your 
+             * The function pressdifyModifyJavascript can be defined in the functions.php of your 
              * WordPress installation, you will get passed an string of the Javascript code which you can modify before the PDF gets rendered.
              */
-            if(function_exists('magazineModifyJavascript')){
-                $sJsToRender = magazineModifyJavascript($sJsToRender);
+            if(function_exists('pressdifyModifyJavascript')){
+                $sJsToRender = pressdifyModifyJavascript($sJsToRender);
             }
             
             switch($magazine_rendering_tool){

@@ -153,12 +153,12 @@
             $sToCHtml      = '';
 
             /**
-             * The function magazineSortAndFilterPosts can be defined in the functions.php of your 
+             * The function pressdifySortAndFilterPosts can be defined in the functions.php of your 
              * WordPress installation, you will get passed an array with the post ids which you can
              * filter or sort. You will need to return an array with the post ids in your method.
              */
-            if(function_exists('magazineSortAndFilterPosts')){
-                $aPostIds = magazineSortAndFilterPosts($aPostIds);
+            if(function_exists('pressdifySortAndFilterPosts')){
+                $aPostIds = pressdifySortAndFilterPosts($aPostIds);
 
                 if(!is_array($aPostIds)){
                     $aPostIds = array();
@@ -274,12 +274,12 @@
             $sContentFinal = '';
 
             /**
-             * The function magazineSortAndFilterPosts can be defined in the functions.php of your 
+             * The function pressdifySortAndFilterPosts can be defined in the functions.php of your 
              * WordPress installation, you will get passed an array with the post ids which you can
              * filter or sort. You will need to return an array with the post ids in your method.
              */
-            if(function_exists('magazineSortAndFilterPosts')){
-                $aPostIds = magazineSortAndFilterPosts($aPostIds);
+            if(function_exists('pressdifySortAndFilterPosts')){
+                $aPostIds = pressdifySortAndFilterPosts($aPostIds);
 
                 if(!is_array($aPostIds)){
                     $aPostIds = array();
@@ -386,8 +386,8 @@
                 /* ADD ACF Support END */
 
                  /* Add functionality to modify each post individually with placeholders*/
-                if(function_exists('magazineModifyPostHtml')) {
-                    $sContentTemp = magazineModifyPostHtml($sContentTemp, $post_id);
+                if(function_exists('pressdifyModifyPostHtml')) {
+                    $sContentTemp = pressdifyModifyPostHtml($sContentTemp, $post_id);
                 }
     
                 $sContentFinal .= $sContentTemp;
