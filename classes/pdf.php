@@ -32,11 +32,11 @@
             $sJsToRender   .= magazine_template::_replacePlaceholders($aPostIds, magazine_template::_getJS($sTheme, $sPageOrPost));
             
             /**
-             * The function magazineModifyHtml can be defined in the functions.php of your 
+             * The function pressdifyModifyHtml can be defined in the functions.php of your 
              * WordPress installation, you will get passed an string of the HTML code which you can modify before the PDF gets rendered.
              */
-            if(function_exists('magazineModifyHtml')){
-                $sHtmlToRender = magazineModifyHtml($sHtmlToRender, $aPostIds);
+            if(function_exists('pressdifyModifyHtml')){
+                $sHtmlToRender = pressdifyModifyHtml($sHtmlToRender, $aPostIds);
             }
 
             /**
