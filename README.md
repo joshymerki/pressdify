@@ -1,6 +1,5 @@
-# Magazine
+# pressdify
 
-* Download Link: https://wordpresstopdf.com/
 * Tags: PDF, HTML to PDF, PrintCSS, WeasyPrint, PagedJS, Vivliostyle, PrintCSS Cloud, RapidAPI
 * Requires at least: 5.9.3
 * Tested up to: 5.9.3
