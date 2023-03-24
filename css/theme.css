@@ -1,3 +1,9 @@
+:root{
+     --clr-primary: #ff006e;
+    --clr-black: #1a1a1a;
+    --clr-white: #F3F3F3;
+}
+
 #magazine_print_html_prefix,
 #magazine_print_html_post,
 #magazine_print_html_page,
@@ -11,14 +17,15 @@
     min-height: 400px;
     width: 100%;
     font-size: 14px;
-    border-bottom: 2px solid lightseagreen;
-    border-left: 2px solid lightseagreen;
-    border-right: 2px solid lightseagreen;
+    border-bottom: 2px solid var(--clr-primary);
+    border-left: 2px solid var(--clr-primary);
+    border-right: 2px solid var(--clr-primary);
     box-sizing: border-box;
 }
 
 .wrap-magazine{
     margin:32px 20px 0 2px;
+
 }
 
 .wrap-magazine h1 {
@@ -38,7 +45,7 @@
 
 .wrap-magazine h1 svg{
     height: 18px;
-    color: lightseagreen;
+    color: var(--clr-primary);
 }
 
 .wrap-magazine details{
@@ -61,7 +68,7 @@
 
 .wrap-magazine details[open] summary{
     font-weight:bold;
-    border-bottom: 2px solid lightseagreen;
+    border-bottom: 2px solid var(--clr-primary);
 }
 
 .wrap-magazine details[open] summary span{
@@ -76,13 +83,13 @@
 
 .wrap-magazine details[open] summary,
 .wrap-magazine summary:focus{
-    outline-color:lightseagreen;
+    outline-color:var(--clr-primary);
     width: calc(100% - 2px);
     margin-left: 1px;
 }
 
 .wrap-magazine summary::marker{
-    color:lightseagreen;
+    color:var(--clr-primary);
 }
 
 .wrap-magazine summary i{
@@ -95,7 +102,7 @@
 }
 
 .wrap-magazine a{
-    color: lightseagreen !important;
+    color: var(--clr-primary) !important;
 }
 
 .wrap-magazine a:hover,
@@ -110,21 +117,22 @@
 
 .wrap-magazine select:focus, 
 .wrap-magazine input:focus{
-    outline-color:lightseagreen;
-    border-color: lightseagreen;
-    box-shadow: 0 0 0 1px lightseagreen;
+    outline-color:var(--clr-primary);
+    border-color: var(--clr-primary);
+    box-shadow: 0 0 0 1px var(--clr-primary);
 }
 
 .wrap-magazine .button-magazine{
-    background: lightseagreen !important;
-    border-color: lightseagreen !important;
+    background: var(--clr-white) !important;
+    color: var(--clr-black);
+    border-color: var(--clr-primary) !important;
 }
 
 .wrap-magazine .button-magazine:hover,
 .wrap-magazine .button-magazine:focus,
 .wrap-magazine .button-magazine:active{
-    background: #007D76 !important;
-    border-color: #007D76 !important;
+    background: var(--clr-primary) !important;
+    border-color: var(--clr-primary) !important;
 }
 
 .wrap-magazine .placeholder-button-wrapper{

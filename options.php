@@ -21,7 +21,7 @@
         add_option("magazine_show_action_on_custom_post_types", 0);
         add_option("magazine_show_button_in_editor", 0);
 
-        add_options_page('Magazine', 'Magazine', 9, 'magazine_option_page', function(){
+        add_options_page('Pressdify', 'Pressdify', 9, 'magazine_option_page', function(){
             $magazine_rendering_tool                    = get_option('magazine_rendering_tool');
             $magazine_rapidapi_key                      = get_option('magazine_rapidapi_key');
             $magazine_docraptor_key                     = get_option('magazine_docraptor_key');
@@ -60,7 +60,7 @@
                                     </optgroup>';
             }
 
-            echo '<div class="wrap wrap-magazine">
+            echo '<div class="wrap wrap-pressdify">
                     <h1>
                         Pressdify Options
                     </h1>
@@ -142,13 +142,13 @@
                             </tr>
                         </table>
                         <p class="submit">
-                            <input type="submit" name="Submit" class="button-primary button-magazine" value="Save Changes" />
+                            <input type="submit" name="Submit" class="button-primary button-pressdify" value="Save Changes" />
                         </p>
                         <input name="action" value="magazin_update_options" type="hidden" />
                     </form>
                 </div>
                 <style>
-                    @import "' . plugin_dir_url( __DIR__ ) . '/magazine/css/options.css";
+                    @import "' . plugin_dir_url( __DIR__ ) . '/pressdify/css/options.css";
                 </style>';
         });
     });
@@ -162,7 +162,7 @@
             $screen->add_help_tab(array(
                 'id' => 'magazine_overview_help',
                 'title' => 'Overview',
-                'content' => '<p>On this screen, you can set the options for your Magazine plugin.</p>
+                'content' => '<p>On this screen, you can set the options for your Pressdify plugin.</p>
                               <ul>
                                 <li>
                                     <b>Rendering Tool:</b><br />

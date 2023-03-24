@@ -28,9 +28,9 @@ add_action('admin_print_footer_scripts', function(){
             $sTemplateOptions .= '<option value=\'' . $sTheme . '\'>' . __( 'PDF Theme: ' . $sTheme, 'magazine_render_pdf') . '</option>';
         }
 		
-		$sLink = '$(".wrap .page-title-action").after("<select id=\'magazine_template_selection\'>' . $sTemplateOptions . '</select><a style=\'color: white;background: lightseagreen;border: lightseagreen;\' href=\'#\' onclick=\'magazine_post_request([' . $post->ID . '], document.getElementById(\"magazine_template_selection\").value);\' class=\'prev-post page-title-action\'>Render PDF</a>");';
+		$sLink = '$(".wrap .page-title-action").after("<select id=\'magazine_template_selection\'>' . $sTemplateOptions . '</select><a style=\'color: white;background: #ff006e;border: #ff006e;\' href=\'#\' onclick=\'magazine_post_request([' . $post->ID . '], document.getElementById(\"magazine_template_selection\").value);\' class=\'prev-post page-title-action\'>Render PDF</a>");';
 		if($screen->is_block_editor){
-			$sLink = '$(".edit-post-header__settings").prepend("<select id=\'magazine_template_selection\'>' . $sTemplateOptions . '</select><a style=\'margin-right:10px;background: lightseagreen !important;border-color: lightseagreen !important;\' href=\'#\' onclick=\'magazine_post_request([' . $post->ID . '], document.getElementById(\"magazine_template_selection\").value);\' class=\'prev-post components-button is-button is-primary is-large\'>Render PDF</a>");';
+			$sLink = '$(".edit-post-header__settings").prepend("<select id=\'magazine_template_selection\'>' . $sTemplateOptions . '</select><a style=\'margin-right:10px;background: #ff006e !important;border-color: #ff006e !important;\' href=\'#\' onclick=\'magazine_post_request([' . $post->ID . '], document.getElementById(\"magazine_template_selection\").value);\' class=\'prev-post components-button is-button is-primary is-large\'>Render PDF</a>");';
 		}
 		echo '
 			<script src="' . plugin_dir_url( __DIR__ ). '/pressdify/javascript/restrequest.js"></script>
