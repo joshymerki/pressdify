@@ -19,6 +19,7 @@ const b64toBlob = (b64Data, contentType="", sliceSize=512) => {
 };
 
 function magazine_post_request(aPostIds, sTheme){
+
 	
 	/* Create Loading Sprinner */
 	var divLoading = document.createElement('div');

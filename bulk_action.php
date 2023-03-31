@@ -54,13 +54,11 @@
 			echo '
 				<script src="' . plugin_dir_url( __DIR__ ). '/pressdify/javascript/restrequest.js"></script>
 				<script>
-					if(window.jQuery) {
-						jQuery(document).ready(function($) {
-							$(window).load(function() {
-								magazine_post_request(' . $_REQUEST['magazine_pdf_post_ids'] . ', "' . $_REQUEST['magazine_pdf_theme'] . '");
-							});
-						});
-					}
+                document.addEventListener("DOMContentLoaded", function(){
+                    window.addEventListener("load", function(){
+                      magazine_post_request(' . $_REQUEST['magazine_pdf_post_ids'] . ', "' . $_REQUEST['magazine_pdf_theme'] . '");
+                    });
+                })
 				</script>
 			';
 		}

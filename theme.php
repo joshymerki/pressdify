@@ -381,7 +381,7 @@
             $screen->add_help_tab(array(
                 'id' => 'magazine_overview_help',
                 'title' => 'Overview',
-                'content' => '<p>On this screen, you can manage your Magazine themes. The themes are placed in the <i>"wp-content/magazine_themes/"</i> folder on your filesystem.</p>
+                'content' => '<p>On this screen, you can manage your Pressdify themes. The themes are placed in the <i>"wp-content/magazine_themes/"</i> folder on your filesystem.</p>
                               <p>From this screen, you can:</p>
                               <ul>
                                 <li>View Themes</li>
